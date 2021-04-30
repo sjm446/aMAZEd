@@ -2,7 +2,7 @@
 import boto3
 import random
 import os
-BUCKET=os.environ.get('AWS_S3_BUCKET')
+BUCKET=os.environ.get('EXPORT_S3_BUCKET_URL')
 if (BUCKET != None):
     s3 = boto3.client('s3')
     with open("maze.txt", "rb") as f:
