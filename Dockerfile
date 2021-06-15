@@ -9,7 +9,7 @@ RUN pip install pygame
 RUN pip install boto3
 
 # copy the content of the local src directory to the working directory
-ADD aMAZEd /code
+ADD * /code/
 ADD run.sh /code
 ADD upload.py /code
  
