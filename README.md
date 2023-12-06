@@ -1,3 +1,14 @@
+This repo contains a container build, designed to run on AWS Batch. It can be run alongside and AWS Workshop such as https://hpcworkshops.messteph.people.aws.dev/07-aws-batch.html to do something a little different from the normal container build and run.
+
+**The Maze generation code is forked from gnmathur/aMAZEd who created the python maze generation code**
+**The idea comes from a great book on Mazes by Jamis Buck**
+
+To build the container, clone the repo, then run "docker build ."
+
+The container can then be run on AWS Batch at scale.
+
+More detail on the Maze generation follows.
+
 # aMAZEd
 
 Implementation of various maze generation algorithms in python. 
