@@ -43,7 +43,7 @@ class Distances:
 
     def show(self):
         for cell in self.cells:
-            print cell, self.cells[cell]
+            print(cell, self.cells[cell])
 
     def get_cells(self):
         return self.cells.keys()

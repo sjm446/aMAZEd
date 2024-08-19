@@ -31,7 +31,6 @@ import datetime
 from grid            import Grid
 from distance_grid   import DistanceGrid
 from solution_grid   import SolutionGrid
-from draw            import MazeDraw
 from mask            import Mask
 from masked_grid     import MaskedGrid
 
@@ -89,26 +88,22 @@ if __name__ == "__main__":
     img_rc_group.add_argument('r', type=int, help="Number of rows")
     img_rc_group.add_argument('c', type=int, help="Number of columns")
 
-    mimg_parser       = subparser.add_parser('masked-image', help="Draw an image of a maze where the maze is created from a mask specified in a B&W image file")
-    mimg_rc_group     = mimg_parser.add_argument_group()
-    mimg_rc_group.add_argument('mask_img', type=file, help="Masked image")
-
     args = parser.parse_args()
 
     if args.subparser_name == "grid":
         g = Grid(args.r, args.c)
         algo_cb[args.algo](g)
-        print g
+        print(g)
     elif args.subparser_name == "distance-grid":
         g = DistanceGrid(args.r, args.c)
         algo_cb[args.algo](g)
         g.compute_distances(g[args.R, args.C])
-        print g
+        print(g)
     elif args.subparser_name == "solution-grid":
         g = SolutionGrid(args.r, args.c)
         algo_cb[args.algo](g)
         g.solve(g[args.sr, args.sc], g[args.er, args.ec])
-        print g
+        print(g)
     elif args.subparser_name == "masked-image":
         m = Mask.from_image(args.mask_img)
         g = MaskedGrid(m)

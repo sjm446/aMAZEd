@@ -31,7 +31,6 @@ from solution_grid   import SolutionGrid
 from masked_grid     import MaskedGrid
 from mask            import Mask
 from random          import choice
-from draw            import MazeDraw
 import argparse
 
 class Backtrack:
@@ -97,16 +96,16 @@ if __name__ == "__main__":
         g = DistanceGrid(nRows, nColumns)
         Backtrack.create(g)
         g.compute_distances(g[0,0])
-        print g
+        print(g)
     elif args.solution_grid:
         g = SolutionGrid(nRows, nColumns)
         Backtrack.create(g)
         g.solve(g[0,0], g[nRows-1, nColumns-1])
-        print g
+        print(g)
     elif args.grid:
         g = Grid(nRows, nColumns)
         Backtrack.create(g)
-        print g
+        print(g)
     elif args.masked_grid:
         # m = Mask(nRows, nColumns)
         # m[0, 0] = False

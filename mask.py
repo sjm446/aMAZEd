@@ -80,6 +80,6 @@ if __name__ == "__main__":
         for col in range(0, 4):
             m[row, col] = False
     m[1,2] = True
-    print m
-    print m.count()
-    print m.random_location()
+    print(m)
+    print(m.count())
+    print(m.random_location())

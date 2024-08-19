@@ -86,4 +86,4 @@ if __name__ == "__main__":
         g = Grid(nRows, nColumns)
         AldousBroder.create(g)
 
-    print g
+    print(g)

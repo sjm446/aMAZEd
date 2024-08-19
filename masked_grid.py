@@ -48,4 +48,4 @@ if __name__ == "__main__":
     mask[2, 3] = False
     mask[0, 2] = False
     mg = MaskedGrid(mask)
-    print mg.random_cell()
+    print(mg.random_cell())

@@ -80,8 +80,8 @@ class Cell:
 
 if __name__ == "__main__":
     c1 = Cell(0,0).link(Cell(1,1)).link(Cell(2,2))
-    print c1.neighbors()
+    print(c1.neighbors())
     for c2 in c1.getLinks():
-        print c2, 
-    print
-    print Cell(1,1).neighbors()
+        print(c2,) 
+    print()
+    print(Cell(1,1).neighbors())

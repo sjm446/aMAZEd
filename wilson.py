@@ -115,4 +115,4 @@ if __name__ == "__main__":
         g = Grid(nRows, nColumns)
         Wilson.create(g)
 
-    print g
+    print(g)

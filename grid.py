@@ -124,25 +124,25 @@ if __name__ == "__main__":
     """
     Unit tests
     """
-    print Grid(10, 10)
+    print(Grid(10, 10))
     for row in Grid(4,4).prepare_grid():
-        print row
+        print(row)
 
     for cell in Grid(4,4).each_cell():
-        print cell
+        print(cell)
 
     print
     g = Grid(4, 4)
-    print g
-    print g[1,2]
-    print "Neighbors of g[1,2]"
+    print(g)
+    print(g[1,2])
+    print("Neighbors of g[1,2]")
     for cell in g[1,2].neighbors():
-        print cell
-    print "Neighbors of g[3,3]"
+        print(cell)
+    print("Neighbors of g[3,3]")
     for cell in g[3,3].neighbors():
-        print cell
+        print(cell)
 
-    print "A random cell"
-    print g.random_cell()
+    print("A random cell")
+    print(g.random_cell())
     
 
