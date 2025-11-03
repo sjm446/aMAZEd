@@ -95,24 +95,6 @@ $ python amazed.py --algo sidewinder solution-grid 10 20 9 0 0 19
 |0   1      |               |           |   |                   |           |   |
 +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
 ```
-
-### Maze image generation using Wilson's algorithm
-
-```sh
-$ python amazed.py --algo wilson image 15 15
-```
-
-![Wilson Method](/images/ex_wilson.png)
-
-### Maze image generation using Backtracking method over a masked grid
-
-```sh
-$ python amazed.py --algo backtracking masked-image images/templates/circle.png
-```
-
-![Backtracking Method using a mask](/images/ex_backtracking_masked.png)
-
-
 License
 ----
 MIT
